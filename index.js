@@ -54,3 +54,21 @@ console.log(`Porcentaje de México contra la población de Canadá: ${porcentaje
 console.log(`Porcentaje de Estados Unidos contra la población de Canadá: ${porcentajeUSVsCan}%`);
 console.log(`Porcentaje de Canadá contra la población de Estados Unidos y México: ${porcentajeCanVsUSMex}%`);
 
+//Validar si el tmec es un arreglo
+console.log(`¿tmec es un arreglo? ${Array.isArray(tmec)}`);
+
+//Con el operador logico validar si todos los paises son hispanos
+let todosHispanos = tmec.every(pais => pais.Hispano);
+console.log(`¿Todos los países son hispanos? ${todosHispanos}`);
+
+//Usar operador condicional para mostrar el pais con mayor población
+let capitalMayorPoblacion = (tmec[1].Poblacion > tmec[0].Poblacion) && (tmec[1].Poblacion > tmec[2].Poblacion) 
+                           ? tmec[1].Capital 
+                           : (tmec[0].Poblacion > tmec[2].Poblacion) 
+                             ? tmec[0].Capital 
+                             : tmec[2].Capital;
+
+console.log(`La capital del país con mayor población es: ${capitalMayorPoblacion}`);
+
+
+
