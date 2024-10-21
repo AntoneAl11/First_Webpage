@@ -1,5 +1,5 @@
 //Declarar un arreglo vacion con el nombre tmec
-let tmec [];
+let tmec = [];
 
 //Declarar un objeto "EdosUnidos"
 let EdosUnidos = {
