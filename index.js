@@ -1,14 +1,14 @@
-const http = require('http');
+//Declarar un arreglo vacion con el nombre tmec
+let tmec [];
 
-const hostname = '127.0.0.1';
-const port = 3000;
+//Declarar un objeto "EdosUnidos"
+let EdosUnidos = {
+    Nombre: "Estados Unidos",
+    Capital: "Washington D.C.",
+    Poblacion: 3.319e8,
+    Hispano: false
+};
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hola, Mundo!\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+//Imprimir valores para verificar funcionalidad
+console.log(tmec);
+console.log(EdosUnidos);
