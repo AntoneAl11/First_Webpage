@@ -9,6 +9,9 @@ let EdosUnidos = {
     Hispano: false
 };
 
+//Agregar el objeto EdosUnidos al arreglo tmec
+tmec.push(EdosUnidos);
+
 //Imprimir valores para verificar funcionalidad
 console.log(tmec);
 console.log(EdosUnidos);
