@@ -12,6 +12,21 @@ let EdosUnidos = {
 //Agregar el objeto EdosUnidos al arreglo tmec
 tmec.push(EdosUnidos);
 
+//Agregando un objeto directo al arreglo sin declarar variable con datos de México
+tmec.push({
+    Nombre: "México",
+    Capital: "Ciudad de México",
+    Poblacion: 1.267e8,
+    Hispano: true
+});
+
+//Agregando un objeto directo al arreglo sin declarar variable con datos de Canada
+tmec.push({
+    Nombre: "Canada",
+    Capital: "Ottawa",
+    Poblacion: 3.825e7,
+    Hispano: false
+});
+
 //Imprimir valores para verificar funcionalidad
 console.log(tmec);
-console.log(EdosUnidos);
